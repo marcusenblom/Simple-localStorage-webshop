@@ -1,0 +1,60 @@
+#detailSection {
+
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .detailImageContainer {
+        width: 90%;
+        img {
+            width: 90%;
+        }
+    }
+
+    .detailInfoContainer {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+
+
+        .detailHeader {
+            margin: 40px 0 20px 0;
+        }
+
+        .detailPrice {
+            margin-bottom: 20px;
+        }
+
+        .detailSpecs {
+            display: flex;
+            flex-direction: column;
+            span {
+                margin: 5px 0;
+            }
+        }
+
+        .buttonContainer {
+            display: flex;
+            justify-content: center;
+            margin-top: 40px;
+
+            button {
+                width: 300px;
+            }
+            
+        }
+    }
+
+
+
+    @media screen and (min-width: 800px) {
+        .detailImageContainer, .detailInfoContainer {
+          width: 45%;
+          max-width: 600px;
+        }
+    }
+
+
+}
